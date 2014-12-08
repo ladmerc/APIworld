@@ -55,7 +55,7 @@ a:hover {
 
 
 /* page structure */
-#w {
+#wrapper {
   display: block;
   width: 800px;
   margin: 0 auto;
