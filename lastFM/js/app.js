@@ -21,7 +21,7 @@ $(document).ready( function () {
         viewHTML += '<a href="' + item.url + '">';
         viewHTML += '<img src="' + item.image[2]["#text"] + '"></a>';
         viewHTML += '<p>' +item.name + '</p></li>'
-        viewHTML += '<div>' + "Your Search returned an error because " + json.message + '</div>'
+        // viewHTML += '<div>' + "Your Search returned an error because " + json.message + '</div>'
       });//end each
       viewHTML += '</ul>'
       $('#section-one').html(viewHTML);
