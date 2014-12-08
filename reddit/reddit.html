@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>API World || Reddit Search</title>
+  <link rel="icon" type="image/png" href="img/andela_icon.png" />
+  <link rel= "stylesheet" type ="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" media="all" href="css/main.css">
+  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="js/redditjson.js"></script>
+</head>
+
+<body>
+  <div id="w">
+    <!-- logo http://dribbble.com/shots/1177942-Reddit-Logo -->
+    <div id="logo">
+      <h1>Reddit API Domain Search</h1>
+    </div>
+    
+    <p>Enter a domain without <code>http://www.</code> to browse recent submissions in Reddit.</p>
+    
+    <div id="searchfield">
+      <form id="domainform" name="domainform">
+        <input type="text" class="search" id="s" name="s" placeholder="ex: youtube.com">
+      </form>
+    </div>
+    
+    <div id="content"></div>
+  </div>
+  <footer>
+        <p>Meke Ladna &copy;, 2014. Thanks to speckyboy.com for the brilliant ideas</p>
+  </footer>
+</body>
+</html>
