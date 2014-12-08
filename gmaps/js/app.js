@@ -3,7 +3,7 @@ $(document).ready(function () {
   $('#canvas').html('<center><img src="img/loading4.gif" alt="loading..."><p>Loading......</p></center>');
   function initialize() {
     var mapOptions = {
-      center: { lat: 6.4531, lng: 150.644},
+      center: { lat: 6.4531, lng: 3.3958},
       zoom: 10,
       mapTypeId:google.maps.MapTypeId.ROADMAP
     };
