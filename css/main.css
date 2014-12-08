@@ -1,0 +1,103 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html {
+  position: relative;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  max-width: 100%;
+  width: 100%;
+  background: white;
+}
+
+center {
+  font-size: 3em;
+  color: green;
+  margin-top: 1%;
+}
+
+#logo {
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  margin: -5% 2%;
+
+}
+
+h3{
+  text-align: center;
+  font-size: 1.7em;
+  color: green;
+  font-variant: small-caps;
+  margin-top: 3%;
+}
+
+#content ul {
+  text-align: center;
+}
+
+#content li {
+  list-style: none;
+  display: inline-block;
+  background-color: #f5f5f5;
+  border: 1px solid grey;
+  /*position: relative;*/
+}
+
+#content a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#content {
+  margin: auto;
+  width: 90%;
+
+}
+
+#content img {
+ max-width: 100%;
+ width: 100%;
+ border-radius: 27%;
+ 
+}
+
+.duo {
+  width: 45%;
+  margin: 2%;
+  position: relative;
+}
+
+.single {
+  width: 45%;
+  margin: 2% 3%;
+  position: relative;
+}
+
+#overlay {
+  background: rgba(0, 200, 0, .5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 0%;
+  height: 5%;
+  background: rgba(255, 255, 255, 0.4);
+  width: 100%;
+  text-align: center;
+  line-height: 10px;
+  font-size: 1em;
+  font-style: italic;
+}

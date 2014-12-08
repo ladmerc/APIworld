@@ -1,0 +1,27 @@
+
+@media screen and (min-width: 660px) {
+  
+  #content li:nth-child(-n+3), #content li:nth-child(n+6) {
+  width: 25%;
+  }
+
+  #content li:nth-child(4), #content li:nth-child(5) {
+  width: 25%;
+  margin-right: 10%;  
+  }
+
+
+}
+
+@media screen and (max-width: 660px) {
+  center {
+    font-size: 1.2em;
+  }  
+
+  #logo {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+  

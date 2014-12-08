@@ -1,0 +1,53 @@
+body {
+  width: 100%;
+}
+
+#wrapper{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+#wrapper > p {
+  margin-top: 5%;
+  font-weight: 800;
+  color: rgba(135, 186, 225, 1)
+}
+
+#canvas {
+  width: 70%;
+  height: 350px;
+  margin:  auto;
+  border-radius: 3%;
+  border: 6px solid rgba(135, 186, 225, 1);
+}
+
+#canvas p {
+  margin-top: -5%;
+  font-weight: 800;
+}
+
+#search {
+  margin-top: 2%;
+  width: 45;
+  border: 2px solid rgba(135, 186, 225, 1);
+}
+
+button {
+  color: #fff;
+  font-weight: bold;
+  background: rgba(135, 186, 225, 1);
+  border-radius: 10%;
+  padding: .5%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0%;
+  height: 5%;
+  background: rgba(135, 186, 225, 1);
+  width: 100%;
+  text-align: center;
+  line-height: 10px;
+  font-style: italic;
+}
