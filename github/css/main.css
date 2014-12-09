@@ -1,7 +1,7 @@
 @import url('http://fonts.googleapis.com/css?family=Oldenburg');
 
 body {
-  background: #fafafa url('../img/grey.png'); /* http://subtlepatterns.com/subtle-grey/ */
+  background: #fafafa url('../img/grey.png');
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 62.5%;
   line-height: 1;
@@ -9,20 +9,9 @@ body {
   padding: 35px 0;
 }
 
-
-input, textarea { 
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  outline: none; 
-}
-
-
 img { 
-  border: 0; max-width: 100%;
+  border: 0; 
+  max-width: 100%;
 }
 
 h1 { 
@@ -54,8 +43,7 @@ a:hover {
 }
 
 
-/* page structure */
-#w {
+#wrapper {
   display: block;
   width: 800px;
   margin: 0 auto;
@@ -69,7 +57,7 @@ a:hover {
   border-radius: 4px;
 }
 
-#ghapidata {
+#feedback {
   display: block;
   padding: 25px 0;
 }
@@ -152,7 +140,7 @@ a:hover {
 }
 
 /* input field */
-#ghusername {
+#inputField {
   display: block;
   padding: 5px 8px;
   font-size: 1.4em;
@@ -161,7 +149,7 @@ a:hover {
   margin-bottom: 15px;
 }
 
-#ghsubmitbtn {
+#submitBtn {
   display: inline-block;
   padding: 8px 18px;
   font-size: 14px;
@@ -182,7 +170,7 @@ a:hover {
   -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.05);
   box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
-#ghsubmitbtn:hover {
+#submitBtn:hover {
   background-color: #dadada;
   background-image: -webkit-linear-gradient(#eaeaea, #dadada);
   background-image: -moz-linear-gradient(#eaeaea, #dadada);
@@ -191,7 +179,7 @@ a:hover {
   background-image: linear-gradient(#eaeaea, #dadada);
   border-color: #ccc #ccc #b5b5b5;
 }
-#ghsubmitbtn:active {
+#submitBtn:active {
   background-color:#dadada;
   background-image: none;
   border-color: #b5b5b5;

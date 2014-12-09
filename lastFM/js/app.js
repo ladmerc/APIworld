@@ -8,7 +8,7 @@ $(document).ready( function () {
     $('#section-one').html('<center><img src="img/loading2.gif" alt="loading..."></center>');
     var params = {
       artist: input,
-      limit: 12,
+      limit: 10,
       api_key: "9876abfee897bc6c18c1ed4410811e0b"
     };//end params
 
@@ -52,27 +52,50 @@ $(document).ready( function () {
       api_key: "9876abfee897bc6c18c1ed4410811e0b"
     };
 
+    if(requestedTrack.trim()){
     var callback2 = function (json2) {
       var viewHTML2 = '<ul>';
-      console.log(json2);
-      $.each(json2.results.trackmatches.track, function (index2, item2) {
-        viewHTML2 += '<li>';
-        viewHTML2 += '<a href="' + item2.url + '">';
-        viewHTML2 += '<img src="' + item2.image[2]["#text"] + '"></a>';
-        viewHTML2 += '<p>' +item2.name + ' by  ' +item2.artist + ' </p></li>'
-      });//end each
-      viewHTML2 += '</ul>'
+      console.log(json2.results.trackmatches);
+      if(json2.results.trackmatches.hasOwnProperty('track')) {
+        $.each(json2.results.trackmatches.track, function (index2, item2) {
+          viewHTML2 += '<li>';
+          viewHTML2 += '<a href="' + item2.url + '">';
+          if(item2.hasOwnProperty('image')) {
+            viewHTML2 += '<img src="' + item2.image[2]["#text"] + '"></a>';
+          }
+          else {
+            viewHTML2 += '<img src="img/andela_icon.png"></a>';
+          }
+          viewHTML2 += '<p>' +item2.name + ' by  ' +item2.artist + ' </p></li>'
+        });//end each
+        viewHTML2 += '</ul>'
+     
+      }
+      else {
+        console.log('error');
+        viewHTML2 = '<div>Cannot Find this track on this database</div>';
+        $('#trackSearch').focus(clearDisplayArea);
+      }
       $('#section-two').html(viewHTML2);
     }//end callback
 
     
     $.getJSON(url2, params2, callback2);
+  }
 
+  else {
+    alert("error");
+  }
     clearTrackInputField = function() {
       $('#trackSearch').val(" ");
     }//end clear function
     
     $('#trackSearch').focus(clearTrackInputField);
+
+    clearDisplayArea = function () {
+      var viewHTML3 = ' ';
+      $('#section-two').html(viewHTML3);
+    }
 
   })//end button2 click;
 
